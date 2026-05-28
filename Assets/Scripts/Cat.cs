@@ -67,6 +67,7 @@ public class Cat: MonoBehaviour
         {
             CatCollected();
             EventBus.Publish(GameEvents.CAT_COLLECTED, pointsOnCollect);
+            Destroy(gameObject);
         }
     }
 }
